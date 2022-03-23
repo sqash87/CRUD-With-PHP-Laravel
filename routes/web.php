@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +21,8 @@ Route::get('/manufacturers', function () {
     return view('manufacturers');
 });
 
-Route::get('/catagories', function () {
-    return view('catagories');
+Route::get('/categories', function () {
+    return view('categories');
 });
 
 Route::get('/db-test', function () {
@@ -37,3 +37,5 @@ Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
 });
+
+Route::resource('/categories', CategoryController::class);
