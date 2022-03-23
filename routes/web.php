@@ -21,8 +21,8 @@ Route::get('/manufacturers', function () {
     return view('manufacturers');
 });
 
-Route::get('/categories', function () {
-    return view('categories');
+Route::get('/catagories', function () {
+    return view('catagories');
 });
 
 Route::get('/db-test', function () {
