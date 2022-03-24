@@ -15,15 +15,8 @@ return new class extends Migration
     {
         Schema::create('customer_equipment', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('customer_id')
-                  ->constrained()
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
-            
-            $table->foreignId('equipment_id')
-                  ->constrained()
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
+            $table->foreignId('equipment_id')->constrained();
+            $table->foreignId('customer_id')->constrained(); 
             $table->timestamps();
         });
     }
