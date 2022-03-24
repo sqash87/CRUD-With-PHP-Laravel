@@ -17,12 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/manufacturers', function () {
-    return view('manufacturers');
+Route::get('/equipments', function () {
+    return view('equipments');
 });
 
-Route::get('/categories', function () {
-    return view('categories');
+Route::get('/customers', function () {
+    return view('customers');
 });
 
 Route::get('/db-test', function () {
