@@ -38,4 +38,3 @@ Route::get('/db-migrate', function () {
     echo Artisan::output();
 });
 
-Route::resource('/categories', CategoryController::class);
