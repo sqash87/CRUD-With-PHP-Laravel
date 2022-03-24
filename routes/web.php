@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\EquipmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +39,4 @@ Route::get('/db-migrate', function () {
     echo Artisan::output();
 });
 
+Route::resource('/equipments', EquipmentController::class);
