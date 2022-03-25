@@ -21,10 +21,6 @@ Route::get('/equipments', function () {
     return view('equipments');
 });
 
-Route::get('/customers', function () {
-    return view('customers');
-});
-
 Route::get('/db-test', function () {
     try {         
          echo \DB::connection()->getDatabaseName();     
