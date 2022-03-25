@@ -13,13 +13,13 @@
         <table id="table" class="table table-bordered">
           <thead>
             <tr>
-              <th>Device Name</th><th>CPU</th><th>Ram</th><th>Storage</th><th>Price</th><th>Invoice</th><th>purchase Date</th><th style="width: 40px"></th>
+            <th>ID</th><th>Device Name</th><th>CPU</th><th>Ram</th><th>Storage</th><th>Price</th><th>Invoice</th><th>purchase Date</th><th style="width: 40px"></th>
             </tr>
           </thead>
           <tbody>
             @foreach($equipments AS $equipment)
               <tr>
-                
+                <td>{{ $equipment->id }}</td>
                 <td>{{ $equipment->device_name }}</td>
                 <td>{{ $equipment->cpu }}</td>
                 <td>{{ $equipment->ram }}</td>
