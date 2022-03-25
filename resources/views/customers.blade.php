@@ -17,7 +17,7 @@
             </tr>
           </thead>
           <tbody>
-            @foreach($equipments AS $equipment)
+            @foreach($customers AS $customer)
               <tr>
                 <td>{{ $customer->id }}</td>
                 <td>{{ $customer->customer_name }}</td>
