@@ -43,7 +43,7 @@ class CustomerController extends Controller
             
        ]);
 
-       $equipment = Equipments::create([ 
+       $customer = Customers::create([ 
            
             'customer_name' => $request->customer_name,
             'customer_email' => $request->customer_email,
