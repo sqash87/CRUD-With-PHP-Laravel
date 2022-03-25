@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EquipmentController;
+use App\Http\Controllers\CustomerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,4 @@ Route::get('/db-migrate', function () {
 });
 
 Route::resource('/equipments', EquipmentController::class);
+Route::resource('/customers', CustomerController::class);
