@@ -17,7 +17,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('customer_name');
             $table->string('customer_email');
-            $table->foreignId('equipment_id')->constrained('equipments');
+            $table->foreignId('equipment_id')->nullable()->constrained('equipments');
             $table->timestamps();
         });
     }

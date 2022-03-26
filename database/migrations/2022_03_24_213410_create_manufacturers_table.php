@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('sales_email');
             $table->string('tech_email');
-            $table->foreignId('equipment_id')->constrained('equipments');
+            $table->foreignId('equipment_id')->nullable()->constrained('equipments');
             $table->timestamps();
         });
     }
