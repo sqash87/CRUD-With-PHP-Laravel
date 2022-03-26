@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customers extends Model
 {
-    protected $fillable = ['id','customer_name','customer_email', 'equipment_id'];
     use HasFactory;
+    protected $fillable = ['id','customer_name','customer_email', 'equipment_id'];
+
+    public function equipments()
+    {
+        return $this->belongsTo(related: Customers::class,foreignkey:'equipment_id', ownerkey:'id');
+    }
+    
 }
