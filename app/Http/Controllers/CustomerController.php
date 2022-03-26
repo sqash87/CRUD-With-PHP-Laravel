@@ -13,7 +13,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $customer = Customers::with(relatios:'equipments')->get();
+        $customer = Customers::with(relations:'equipments')->get();
         
         return view(view:'customers')->with ('customers',$customers);
     }
