@@ -13,13 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
-            $table->id();
-            $table->string('customer_name');
-            $table->string('customer_email');
-            $table->foreignId('equipment_id')->constrained('equipments');
-            $table->timestamps();
-        });
+        Schema::dropIfExists('customers');
     }
 
     /**
