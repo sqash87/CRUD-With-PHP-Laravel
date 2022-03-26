@@ -12,7 +12,7 @@ class Customers extends Model
 
     public function equipments()
     {
-        return $this->belongsTo(related: Customers::class,foreignkey:'equipment_id', ownerkey:'id');
+        return $this->belongsTo(Equipment::class);
     }
     
 }
