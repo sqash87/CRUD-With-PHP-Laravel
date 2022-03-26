@@ -12,7 +12,7 @@ class Customers extends Model
 
     public function equipments()
     {
-        return $this->belongsTo(Equipment::class);
+        return $this->belongsTo(Equipments::class);
     }
     
 }
