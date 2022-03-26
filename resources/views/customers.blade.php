@@ -13,7 +13,7 @@
         <table id="table" class="table table-bordered">
           <thead>
             <tr>
-            <th>ID</th><th>Customer Name</th><th>Customer Email</th><th>Equipment ID</th><th style="width: 40px"></th>
+            <th>ID</th><th>Customer Name</th><th>Customer Email</th><th>Equipment ID</th><th>Device Name</th><th style="width: 40px"></th>
             </tr>
           </thead>
           <tbody>
@@ -23,6 +23,8 @@
                 <td>{{ $customer->customer_name }}</td>
                 <td>{{ $customer->customer_email }}</td>
                 <td>{{ $customer->equipments->equipment_id }}</td>
+                <td>{{ $customer->equipments->device_name }}</td>
+
               </tr>
             @endforeach
           </tbody>

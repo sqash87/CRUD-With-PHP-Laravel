@@ -39,6 +39,7 @@ class CustomerController extends Controller
         $validated = $request->validate([
             'customer_name' => 'required',
             'customer_email' => 'required',
+            'equipment_id' =>'required',
             'device_name' => 'required',
             
             
@@ -48,7 +49,8 @@ class CustomerController extends Controller
            
             'customer_name' => $request->customer_name,
             'customer_email' => $request->customer_email,
-            'device_name' => $request->customer_id,
+            'equipment_id' => $request->equipment_id,
+            'device_name' => $request->device_name,
             
        ]);
 
