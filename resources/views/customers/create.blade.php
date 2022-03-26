@@ -12,7 +12,6 @@
     <x-adminlte-input name="customer_name" label="Customer Name" />
     <x-adminlte-input name="customer_email" label="Customer Email" />
     <x-adminlte-input name="equipment_id" type="number" min=0 max=100 label="Equipment ID" />
-    <x-adminlte-input name="device_name" label="Device Name" />
     
     <x-adminlte-button type="Submit" label="Submit" />
     
