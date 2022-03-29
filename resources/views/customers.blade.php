@@ -22,8 +22,8 @@
                 <td>{{ $customer->id }}</td>
                 <td>{{ $customer->customer_name }}</td>
                 <td>{{ $customer->customer_email }}</td>
+                <td>{{ $customer->equipment_id }}</td>
                 <td>{{ $customer->equipments->device_name }}</td>
-
               </tr>
             @endforeach
           </tbody>
