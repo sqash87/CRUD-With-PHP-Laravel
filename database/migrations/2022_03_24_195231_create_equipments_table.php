@@ -14,14 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('equipments', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('device_name');
-            $table->integer('cpu');
-            $table->integer('ram');
-            $table->integer('storage');
-            $table->string('price', $precision = 8, $scale = 2);
-            $table->integer('invoice');
-            $table->DateTime('purchaseDate');
+            $table->id();
+            $table->string('device_name')->nullable();
+            $table->integer('cpu')->nullable();
+            $table->integer('ram')->nullable();
+            $table->integer('storage')->nullable();
+            $table->string('price', $precision = 8, $scale = 2)->nullable();
+            $table->integer('invoice')->nullable();
+            $table->DateTime('purchaseDate')->nullable();
             $table->timestamps();
 
         });
