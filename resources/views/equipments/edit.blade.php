@@ -21,7 +21,7 @@
   </x-adminlte-select>
   
   
-  <x-adminlte-input name="invoice" value="{{ $equipment->invoice }}" label="Invoice" />
+  
 
   <x-adminlte-select name="manufacturer_id" value="{{ $equipment->manufacturer_id }}" label="Manufacturer">
     @foreach($manufacturers AS $manufacturer)
