@@ -227,19 +227,19 @@ return [
     'menu' => [
 
         [
-            'text' => 'Enter Customers Data first',
+            'text' => 'First Enter Customers Data',
             'url'  => 'customers',
             'icon' => 'fas fa-fw fa-file',
         ],
 
         [
-            'text' => 'Enter Manufacturers Data second',
+            'text' => 'Second Enter Manufacturers Data',
             'url'  => 'manufacturers',
             'icon' => 'fas fa-fw fa-file',
         ],
         
         [         
-            'text' => 'View The Equipments Now',
+            'text' => 'Lastly View Equipments',
             'url'  => 'equipments',
             'icon' => 'fas fa-fw fa-calendar-alt',
         ],
