@@ -17,7 +17,7 @@
       <p>Equipment Type: {{ $equipment->equipment_name; }}</p>
       <p>Price: {{ $equipment->price; }}</p>
       <p>CPU: {{ $equipment->cpu; }}</p>
-      <p>Ram: {{ $hardware->ram; }}</p>
+      <p>Ram: {{ $equipment->ram; }}</p>
       <p>Storage: {{ $equipment->storage; }}</p>
       
   </div>
