@@ -15,5 +15,15 @@
 
   <form style="margin: 0; padding: 0">
     <a class="btn btn-default" href="{{ route('customers.edit', ['customer'=>$customer->id]) }}">Edit</a>
-  </form>  
+  </form>
+
+  <form style="margin: 0; padding: 0" action="{{ route('customers.destroy', ['customer'=>$customer->id]) }}" method="POST">
+    <a class="btn btn-default" href="{{ route('customers.edit', ['customer'=>$customer->id]) }}">Edit</a>
+    @csrf
+      @method('DELETE')
+      <button type="submit" class="btn btn-danger">Delete</button>
+  </form>   
+
+
+
 @stop

@@ -18,5 +18,13 @@
 
   <form style="margin: 0; padding: 0">
     <a class="btn btn-default" href="{{ route('manufacturers.edit', ['manufacturer'=>$manufacturer->id]) }}">Edit</a>
+  </form>
+  
+  <form style="margin: 0; padding: 0" action="{{ route('manufacturers.destroy', ['manufacture'=>$manufacture->id]) }}" method="POST">
+    <a class="btn btn-default" href="{{ route('manufacturers.edit', ['manufacture'=>$manufacture->id]) }}">Edit</a>
+    @csrf
+      @method('DELETE')
+      <button type="submit" class="btn btn-danger">Delete</button>
   </form>  
+
 @stop
