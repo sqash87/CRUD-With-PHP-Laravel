@@ -16,10 +16,6 @@
     <p>Email: {{ $manufacturer->tech_email; }}</p>
   </div>
 
-  <form style="margin: 0; padding: 0">
-    <a class="btn btn-default" href="{{ route('manufacturers.edit', ['manufacturer'=>$manufacturer->id]) }}">Edit</a>
-  </form>
-  
   <form style="margin: 0; padding: 0" action="{{ route('manufacturers.destroy', ['manufacturer'=>$manufacturer->id]) }}" method="POST">
     <a class="btn btn-default" href="{{ route('manufacturers.edit', ['manufacturer'=>$manufacturer->id]) }}">Edit</a>
     @csrf

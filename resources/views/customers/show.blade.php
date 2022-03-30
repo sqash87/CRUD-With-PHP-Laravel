@@ -13,10 +13,6 @@
     <p>Email: {{ $customer->customer_email; }}</p>
   </div>
 
-  <form style="margin: 0; padding: 0">
-    <a class="btn btn-default" href="{{ route('customers.edit', ['customer'=>$customer->id]) }}">Edit</a>
-  </form>
-
   <form style="margin: 0; padding: 0" action="{{ route('customers.destroy', ['customer'=>$customer->id]) }}" method="POST">
     <a class="btn btn-default" href="{{ route('customers.edit', ['customer'=>$customer->id]) }}">Edit</a>
     @csrf
