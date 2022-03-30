@@ -40,7 +40,7 @@ class CustomerController extends Controller
             'customer_email' => 'required',
        ]);
 
-       $userinfo = Userinfo::create([
+       $customer = Customer::create([
         'customer_name' => $request->customer_name,
         'customer_email' => $request->customer_email,  
         ]);
