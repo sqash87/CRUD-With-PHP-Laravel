@@ -15,6 +15,8 @@ use App\Http\Controllers\CustomerController;
 |
 */
 
+
+URL::forceScheme('https');
 Route::get('/', function () {
     return view('welcome');
 });
