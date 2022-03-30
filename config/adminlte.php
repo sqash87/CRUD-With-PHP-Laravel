@@ -227,21 +227,23 @@ return [
     'menu' => [
 
         [
-            'text' => 'Manufacturers',
+            'text' => '#1Customers',
+            'url'  => 'customers',
+            'icon' => 'fas fa-fw fa-file',
+        ],
+
+        [
+            'text' => '#2Manufacturers',
             'url'  => 'manufacturers',
             'icon' => 'fas fa-fw fa-file',
         ],
+        
         [         
-            'text' => 'Equipments',
+            'text' => '#3Equipments',
             'url'  => 'equipments',
             'icon' => 'fas fa-fw fa-calendar-alt',
         ],
         
-        [
-            'text' => 'Customers',
-            'url'  => 'customers',
-            'icon' => 'fas fa-fw fa-file',
-        ],
         
     ],
 
