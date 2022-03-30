@@ -75,7 +75,7 @@ class EquipmentController extends Controller
         'purchaseDate' => $request->date('purchaseDate'),
         'ram' => $request->ram,
         'storage' => $request->storage,
-        'notes'=>$request->storage,
+        'notes'=>$request->notes,
    ]);
 
    return $this->index();
