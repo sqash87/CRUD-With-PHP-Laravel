@@ -61,6 +61,7 @@ class EquipmentController extends Controller
             'price' => 'required',
             'ram' => 'required',
             'storage' => 'required',
+            'notes'=>'required',
 
        ]);
 
@@ -73,7 +74,8 @@ class EquipmentController extends Controller
         'price' => $request->price,
         'purchaseDate' => $request->date('purchaseDate'),
         'ram' => $request->ram,
-        'storage' => $request->storage, 
+        'storage' => $request->storage,
+        'notes'=>$request->storage,
    ]);
 
    return $this->index();
