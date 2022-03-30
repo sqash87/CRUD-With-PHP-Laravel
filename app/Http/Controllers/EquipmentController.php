@@ -102,7 +102,7 @@ class EquipmentController extends Controller
     {
         $manufacturers = manufacturer::all();
         $customers = Customer::all();
-        $equipments = Equipments::find($id);
+        $equipment = Equipments::find($id);
         return view('equipments.edit', compact('equipment', 'manufacturers', 'customers'));
     }
 
