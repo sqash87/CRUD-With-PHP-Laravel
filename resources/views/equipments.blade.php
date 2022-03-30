@@ -13,7 +13,7 @@
         <table id="table" class="table table-bordered">
           <thead>
             <tr>
-            <th>User ID</th><th>Invoice</th><th>Company Name</th><th>Device Name</th><th>User Email</th><th>Ram</th><th>Storage</th><th>Price</th><th>Notes</th><th>Purchase Date</th><th>View</th>
+            <th>Customer ID</th><th>Invoice</th><th>Company Name</th><th>Equipment Name</th><th>User Email</th><th>Ram</th><th>Storage</th><th>Price</th><th>Notes</th><th>Purchase Date</th><th>View</th>
             </tr>
           </thead>
           <tbody>
