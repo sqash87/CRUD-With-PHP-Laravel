@@ -102,7 +102,7 @@ class CustomerController extends Controller
      */
     public function destroy($id)
     {
-        $response = Customers::where('id', $id)->delete();
+        $response = Customer::where('id', $id)->delete();
         return $this->index();
     }
 }
