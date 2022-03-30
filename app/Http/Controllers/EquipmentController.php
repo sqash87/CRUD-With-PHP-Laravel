@@ -137,7 +137,7 @@ class EquipmentController extends Controller
 
        ]);
 
-       $response = Equipmets::where('id', $id)->update([
+       $response = Equipments::where('id', $id)->update([
             'customer_id' => $request->customer_id,
             'manufacturer_id' => $request->manufacturer_id,
             'invoice' => $request->invoice,
