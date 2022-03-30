@@ -52,3 +52,7 @@ Route::get('/db-migrate', function () {
 Route::resource('/manufacturers', ManufacturerController::class);
 Route::resource('/customers', CustomerController::class);
 Route::resource('/equipments', EquipmentController::class);
+
+Route::fallback(function(){
+    return view('fallback');
+});
