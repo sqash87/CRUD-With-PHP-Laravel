@@ -9,7 +9,7 @@ use App\Models\Customer;
 
 class Equipments extends Model
 {
-    protected $fillable = ['customer_id', 'manufacturer_id', 'invoice', 'equipment_name','purchaseDate', 'cpu', 'price','ram','storage'];
+    protected $fillable = ['customer_id', 'manufacturer_id', 'invoice', 'equipment_name','purchaseDate', 'cpu', 'price','ram','storage', 'notes'];
     use HasFactory;
 
     function customer()

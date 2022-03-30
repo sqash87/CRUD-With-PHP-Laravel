@@ -12,13 +12,15 @@
   <div>
       <p>Customer information</p>
       <p>Customer ID: {{ $equipment->customer_id; }}</p>
-      <p>Invoice #{{ $equipment->invoice; }}</p>
+      <p>Invoice {{ $equipment->invoice; }}</p>
       <p>Manufacturer: {{ $equipment->manufacturer->company_name; }}</p>
       <p>Equipment Type: {{ $equipment->equipment_name; }}</p>
       <p>Price: {{ $equipment->price; }}</p>
       <p>CPU: {{ $equipment->cpu; }}</p>
       <p>Ram: {{ $equipment->ram; }}</p>
       <p>Storage: {{ $equipment->storage; }}</p>
+      <p>Notes: {{ $equipment->notes; }}</p>
+
       
   </div>
 

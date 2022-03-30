@@ -32,6 +32,8 @@
     <x-adminlte-input name="purchaseDate" type="datetime-local" label="Purchase Date"/>
     <x-adminlte-input name="ram"  label="Ram" />
     <x-adminlte-input name="storage" label="Storage" />
+    <x-adminlte-input name="notes" label="Notes" />
+
     <x-adminlte-button type="Submit" label="Submit" />
 </form>
 @stop

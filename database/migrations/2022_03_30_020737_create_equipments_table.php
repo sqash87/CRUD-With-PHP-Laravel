@@ -24,8 +24,7 @@ return new class extends Migration
             $table->string('price', $precision = 8, $scale = 2)->nullable();
             $table->string('ram')->nullable();
             $table->string('storage')->nullable();
-            
-
+            $table->string('notes')->nullable();
             $table->timestamps();
         });
     }

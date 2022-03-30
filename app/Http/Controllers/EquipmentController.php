@@ -134,6 +134,7 @@ class EquipmentController extends Controller
          'price' => 'required',
          'ram' => 'required',
          'storage' => 'required',
+         'notes' => 'required',
 
        ]);
 
@@ -146,7 +147,8 @@ class EquipmentController extends Controller
             'cpu' => $request->cpu,
             'price' => $request->price,
             'ram' => $request->ram,
-            'storage' => $request->storage, 
+            'storage' => $request->storage,
+            'notes' => $request->notes,
         ]);
         return $this->index();
     }
