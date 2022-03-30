@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\manufacturer;
 
-class manufacturerController extends Controller
+class ManufacturerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class manufacturerController extends Controller
      */
     public function index()
     {
-        //
+        $manufacturers = manufacturer::all();
+        return view('manufacturers', compact('manufacturers'));
     }
 
     /**
@@ -23,7 +25,7 @@ class manufacturerController extends Controller
      */
     public function create()
     {
-        //
+        return view('manufacturers.create');
     }
 
     /**
@@ -34,7 +36,25 @@ class manufacturerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            
+            'company_name' => 'required',
+            'tech_email' => 'required',
+            'sales_email' => 'required',            
+       ]);
+
+       $manufacturer = manufacturer::create([ 
+        
+        'company_name' => $request->company_name,
+        'sales_email' => $request->sales_email,
+        'tech_email' => $request->tech_email,
+       
+        ]);
+        
+        return $this->index();
+
+
+
     }
 
     /**
@@ -45,7 +65,8 @@ class manufacturerController extends Controller
      */
     public function show($id)
     {
-        //
+        $manufacturer = manufacturer::find($id); 
+        return view('manufacturers.show',compact('manufacturer'));
     }
 
     /**
@@ -56,7 +77,8 @@ class manufacturerController extends Controller
      */
     public function edit($id)
     {
-        //
+        $manufacturer = manufacturer::find($id);
+        return view('manufacturers.edit', compact('manufacturer'));
     }
 
     /**
@@ -68,7 +90,22 @@ class manufacturerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated = $request->validate([ 
+            'company_name' => 'required',  
+            'sales_email' => 'required', 
+            'tech_email' => 'required',
+            
+       ]);
+
+       $response = manufacturer::where('id', $id)->update([  
+            
+            'company_name' => $request->company_name,       
+            'sales_email' => $request->sales_email,
+            'tech_email' => $request->tech_email,
+            
+       ]);
+
+       return $this->index();
     }
 
     /**

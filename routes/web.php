@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\manufacturerController;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\CustomerController;
 /*
@@ -18,9 +19,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return view('welcome');
+});
+
 Route::get('/equipments', function () {
     return view('equipments');
 });
+
+Route::get('/manufacturers', function () {
+    return view('manufacturers');
+});
+
+Route::get('/customers', function () {
+    return view('customers');
+});
+
 
 Route::get('/db-test', function () {
     try {         
@@ -35,5 +49,6 @@ Route::get('/db-migrate', function () {
     echo Artisan::output();
 });
 
-Route::resource('/equipments', EquipmentController::class);
-Route::resource('/customers', CustomerController::class);
+Route::resource('/manufacturers', ManufacturerController::class);
+Route::resource('/userinfos', CustomerController::class);
+Route::resource('/hardwares', EquipmentController::class);
